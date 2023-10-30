@@ -4,7 +4,7 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21678"/>
-        <capability name="Map view configurations" minToolsVersion="14.0"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -18,14 +18,59 @@
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="prb-yl-gIX">
-                                <rect key="frame" x="0.0" y="49" width="414" height="803"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <standardMapConfiguration key="preferredConfiguration"/>
-                            </mapView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="UuZ-BT-78p">
+                                <rect key="frame" x="40" y="89" width="313" height="492"/>
+                                <color key="backgroundColor" red="0.92095960847306901" green="1" blue="0.86404019012256938" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="128" id="9UF-P9-Q33"/>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="128" id="QXj-CC-jgW"/>
+                                </constraints>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lRB-nD-qW2">
+                                <rect key="frame" x="40" y="712" width="313" height="35"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="35" id="Qxm-R5-L7u"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="SNSに投稿">
+                                    <backgroundConfiguration key="background">
+                                        <color key="backgroundColor" name="AccentColor"/>
+                                    </backgroundConfiguration>
+                                    <color key="baseForegroundColor" systemColor="secondarySystemBackgroundColor"/>
+                                </buttonConfiguration>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2As-OE-OaD">
+                                <rect key="frame" x="40" y="637" width="313" height="35"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="35" id="SNU-hM-7sZ"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="カメラを起動">
+                                    <backgroundConfiguration key="background">
+                                        <color key="backgroundColor" name="AccentColor"/>
+                                    </backgroundConfiguration>
+                                    <color key="baseForegroundColor" systemColor="secondarySystemBackgroundColor"/>
+                                </buttonConfiguration>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="2As-OE-OaD" firstAttribute="top" secondItem="UuZ-BT-78p" secondAttribute="bottom" constant="62" id="4bI-EK-igV"/>
+                            <constraint firstItem="2As-OE-OaD" firstAttribute="top" secondItem="UuZ-BT-78p" secondAttribute="bottom" constant="62" id="G9k-UX-2RI"/>
+                            <constraint firstItem="2As-OE-OaD" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="40" id="Ktq-Hi-30c"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="lRB-nD-qW2" secondAttribute="trailing" constant="40" id="Pho-8s-v3a"/>
+                            <constraint firstItem="lRB-nD-qW2" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="40" id="Vra-ki-Cig"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="UuZ-BT-78p" secondAttribute="trailing" constant="40" id="WOa-H0-jwV"/>
+                            <constraint firstItem="UuZ-BT-78p" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="30" id="Yqi-rf-u9d"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="2As-OE-OaD" secondAttribute="trailing" constant="40" id="gZN-Jj-ybY"/>
+                            <constraint firstItem="lRB-nD-qW2" firstAttribute="top" secondItem="2As-OE-OaD" secondAttribute="bottom" constant="30" id="iC9-C1-VZD"/>
+                            <constraint firstItem="2As-OE-OaD" firstAttribute="top" secondItem="UuZ-BT-78p" secondAttribute="bottom" constant="62" id="jZZ-xg-Ggf"/>
+                            <constraint firstItem="UuZ-BT-78p" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="30" id="lDc-uk-U8E"/>
+                            <constraint firstItem="lRB-nD-qW2" firstAttribute="leading" secondItem="2As-OE-OaD" secondAttribute="trailing" constant="40" id="naa-ew-ejk"/>
+                            <constraint firstItem="UuZ-BT-78p" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="40" id="w1Y-Zw-BDN"/>
+                            <constraint firstItem="2As-OE-OaD" firstAttribute="top" secondItem="UuZ-BT-78p" secondAttribute="bottom" constant="30" id="z3H-pv-p47"/>
+                        </constraints>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -34,6 +79,12 @@
         </scene>
     </scenes>
     <resources>
+        <namedColor name="AccentColor">
+            <color red="0.0" green="0.46000000000000002" blue="0.89000000000000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <systemColor name="secondarySystemBackgroundColor">
+            <color red="0.94901960784313721" green="0.94901960784313721" blue="0.96862745098039216" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>

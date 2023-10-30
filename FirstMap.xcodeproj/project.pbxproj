@@ -10,7 +10,7 @@
 		ED0C56FC2AECBB220076624D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED0C56FB2AECBB220076624D /* AppDelegate.swift */; };
 		ED0C56FE2AECBB220076624D /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED0C56FD2AECBB220076624D /* SceneDelegate.swift */; };
 		ED0C57002AECBB220076624D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED0C56FF2AECBB220076624D /* ViewController.swift */; };
-		ED0C57032AECBB220076624D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ED0C57012AECBB220076624D /* Main.storyboard */; };
+		ED0C57032AECBB220076624D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ED0C57012AECBB220076624D /* Main.storyboard */; settings = {ASSET_TAGS = (image, ); }; };
 		ED0C57052AECBB260076624D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ED0C57042AECBB260076624D /* Assets.xcassets */; };
 		ED0C57082AECBB260076624D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ED0C57062AECBB260076624D /* LaunchScreen.storyboard */; };
 		ED0C57132AECBB260076624D /* FirstMapTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED0C57122AECBB260076624D /* FirstMapTests.swift */; };
@@ -190,6 +190,9 @@
 			isa = PBXProject;
 			attributes = {
 				BuildIndependentTargetsInParallel = 1;
+				KnownAssetTags = (
+					image,
+				);
 				LastSwiftUpdateCheck = 1430;
 				LastUpgradeCheck = 1430;
 				TargetAttributes = {
